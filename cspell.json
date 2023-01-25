@@ -1,0 +1,6 @@
+{
+  "version": "0.2",
+  "dictionaries": ["companies", "filetypes", "npm", "softwareTerms"],
+  "ignorePaths": [],
+  "words": ["automerge", "matzkoh", "packagejson", "unpublish"]
+}

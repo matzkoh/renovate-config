@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "config:base",
+    ":automergePatch",
+    ":automergeBranch",
+    ":maintainLockFilesWeekly",
+    ":pinAllExceptPeerDependencies",
+    ":prNotPending",
+    ":disableRateLimiting",
+    ":label(dependencies)",
+    ":timezone(Asia/Tokyo)"
+  ],
+  "npm": {
+    "extends": ["npm:unpublishSafe"],
+    "packageRules": [
+      {
+        "matchDepTypes": ["devDependencies"],
+        "extends": [":automergeMinor"]
+      }
+    ]
+  }
+}
