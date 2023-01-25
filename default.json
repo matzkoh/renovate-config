@@ -8,6 +8,7 @@
     ":pinAllExceptPeerDependencies",
     ":prNotPending",
     ":disableRateLimiting",
+    ":disableDependencyDashboard",
     ":label(dependencies)",
     ":timezone(Asia/Tokyo)"
   ],
