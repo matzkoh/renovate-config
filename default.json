@@ -1,11 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:js-app",
     ":automergePatch",
     ":automergeBranch",
     ":maintainLockFilesWeekly",
-    ":pinAllExceptPeerDependencies",
     ":prNotPending",
     ":disableRateLimiting",
     ":disableDependencyDashboard",
