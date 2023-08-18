@@ -13,6 +13,7 @@
   ],
   "npm": {
     "extends": ["npm:unpublishSafe"],
+    "postUpdateOptions": ["npmDedupe"],
     "packageRules": [
       {
         "matchDepTypes": ["devDependencies"],
