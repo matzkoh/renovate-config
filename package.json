@@ -13,7 +13,7 @@
     "lint": "run-p lint:*",
     "lint:prettier": "prettier -c .",
     "lint:renovate": "renovate-config-validator default.json",
-    "lint:spell": "cspell --no-progress .",
+    "lint:spell": "cspell --gitignore --no-progress .",
     "test": "npm run lint"
   },
   "devDependencies": {
