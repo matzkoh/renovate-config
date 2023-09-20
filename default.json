@@ -19,5 +19,13 @@
         "extends": [":automergeMinor"]
       }
     ]
+  },
+  "nodenv": {
+    "packageRules": [
+      {
+        "matchManagers": ["nodenv"],
+        "extends": [":automergeMinor"]
+      }
+    ]
   }
 }
