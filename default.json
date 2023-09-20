@@ -12,7 +12,7 @@
   ],
   "npm": {
     "extends": ["npm:unpublishSafe"],
-    "postUpdateOptions": ["npmDedupe"],
+    "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
     "packageRules": [
       {
         "matchDepTypes": ["devDependencies"],
