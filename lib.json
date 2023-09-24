@@ -10,9 +10,23 @@
     ":label(dependencies)",
     ":timezone(Asia/Tokyo)"
   ],
+  "packageRules": [
+    {
+      "matchDepTypes": ["action"],
+      "pinDigests": false
+    }
+  ],
+  "nodenv": {
+    "packageRules": [
+      {
+        "matchManagers": ["nodenv"],
+        "extends": [":automergeMinor"]
+      }
+    ]
+  },
   "npm": {
     "extends": ["npm:unpublishSafe"],
-    "postUpdateOptions": ["npmDedupe"],
+    "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
     "packageRules": [
       {
         "matchDepTypes": ["devDependencies"],

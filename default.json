@@ -10,13 +10,11 @@
     ":label(dependencies)",
     ":timezone(Asia/Tokyo)"
   ],
-  "npm": {
-    "extends": ["npm:unpublishSafe"],
-    "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
+  "github-actions": {
     "packageRules": [
       {
-        "matchDepTypes": ["devDependencies"],
-        "extends": [":automergeMinor"]
+        "matchDepTypes": ["action"],
+        "pinDigests": false
       }
     ]
   },
@@ -24,6 +22,16 @@
     "packageRules": [
       {
         "matchManagers": ["nodenv"],
+        "extends": [":automergeMinor"]
+      }
+    ]
+  },
+  "npm": {
+    "extends": ["npm:unpublishSafe"],
+    "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
+    "packageRules": [
+      {
+        "matchDepTypes": ["devDependencies"],
         "extends": [":automergeMinor"]
       }
     ]
