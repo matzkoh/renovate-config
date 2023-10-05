@@ -31,7 +31,7 @@
     "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
     "packageRules": [
       {
-        "matchDepTypes": ["devDependencies"],
+        "matchDepTypes": ["devDependencies", "packageManager"],
         "extends": [":automergeMinor"]
       }
     ]
