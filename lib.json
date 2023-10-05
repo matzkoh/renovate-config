@@ -14,16 +14,12 @@
     {
       "matchDepTypes": ["action"],
       "pinDigests": false
+    },
+    {
+      "matchManagers": ["nodenv"],
+      "extends": [":automergeMinor"]
     }
   ],
-  "nodenv": {
-    "packageRules": [
-      {
-        "matchManagers": ["nodenv"],
-        "extends": [":automergeMinor"]
-      }
-    ]
-  },
   "npm": {
     "extends": ["npm:unpublishSafe"],
     "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
