@@ -22,7 +22,7 @@
     "lint-staged": "15.2.2",
     "npm-run-all2": "5.0.2",
     "prettier": "3.2.5",
-    "prettier-plugin-packagejson": "2.4.10",
+    "prettier-plugin-packagejson": "2.4.11",
     "renovate": "37.192.0"
   }
 }
