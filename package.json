@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "cspell": "8.16.0",
-    "husky": "9.1.6",
+    "husky": "9.1.7",
     "lint-staged": "15.2.10",
     "npm-run-all2": "7.0.1",
     "prettier": "3.3.3",
