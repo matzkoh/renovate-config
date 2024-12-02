@@ -23,6 +23,6 @@
     "npm-run-all2": "7.0.1",
     "prettier": "3.4.1",
     "prettier-plugin-packagejson": "2.5.6",
-    "renovate": "39.43.0"
+    "renovate": "39.44.0"
   }
 }
