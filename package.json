@@ -17,7 +17,7 @@
     "test": "npm run lint"
   },
   "devDependencies": {
-    "cspell": "9.6.3",
+    "cspell": "9.6.4",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
     "npm-run-all2": "8.0.4",
